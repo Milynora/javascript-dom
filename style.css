@@ -1,0 +1,73 @@
+/* BODY BACKGROUND */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #dbeafe 0%, transparent 70%);
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #fde2f3 0%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+  z-index: -1;
+}
+
+/* CARD DESIGN */
+.custom-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* INPUT STYLING */
+.form-control,
+.form-select {
+  border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 0.15rem rgba(139, 92, 246, 0.2);
+}
+
+/* BUTTON */
+.btn-primary {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* TABLE */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+/* ALERTS */
+.alert {
+  border-radius: 10px;
+}
